@@ -1,4 +1,4 @@
-# My Portfolio
+# HTML, CSS, and JavaScript Capstone Project
 
 >	This is my HTML, CSS, and JavaScript capstone project .
 
