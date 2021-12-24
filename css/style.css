@@ -75,11 +75,10 @@ header nav .header__ul {
   list-style-type: none;
 }
 
-header nav ul li .header__logo {
+header nav ul li .header__logo img {
+  width: 30%;
   font-size: 2rem;
-  font-weight: 700;
   margin-left: 2.8rem;
-  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -249,11 +248,15 @@ main {
   width: 28%;
 }
 
+.article-container {
+  width: 100%;
+}
+
 .program__article {
-  width: 98%;
+  width: 97%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 1.2rem;
-  padding: 1.4rem;
+  padding: 2.6rem;
   display: grid;
   justify-content: space-between;
   align-items: center;
@@ -265,7 +268,7 @@ main {
   text-align: center;
 }
 
-.program__article img {
+.program .program__article img {
   width: 100%;
 }
 
@@ -318,6 +321,14 @@ main {
   grid-template-columns: 100%;
   row-gap: 6rem;
   padding: 0 3rem 6rem 4rem;
+}
+
+.speakers-card-container {
+  width: 100%;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: 100%;
+  row-gap: 6rem;
 }
 
 .speakers-card {
@@ -425,20 +436,221 @@ main {
   width: 14%;
 }
 
-.partner .logos {
+.footer .partner .logos {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.partner img {
+.footer .partner img {
   width: 30%;
 }
 
-.creative-commons {
+.footer .creative-commons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
+}
+
+/* media queries */
+
+/* Desktops */
+
+@media (min-width: 768px) {
+  header .header__logo {
+    display: block;
+  }
+
+  header .desktop-menu-container {
+    display: block;
+  }
+
+  header .desktop-menu li {
+    list-style: none;
+  }
+
+  header .desktop-menu li a {
+    text-decoration: none;
+    margin-right: 6rem;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+  }
+
+  header .desktop-menu li a:hover {
+    color: var(--accent-color);
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+
+  header nav .header__ul {
+    justify-content: space-between;
+    padding: 4rem 16rem;
+  }
+
+  header .nav__button {
+    display: none;
+  }
+
+  .headline {
+    background-image: url(../img/headline-bg-1.png);
+    padding: 13rem 18rem;
+  }
+
+  .headline h1 {
+    font-size: 5rem;
+    width: 70%;
+    padding-bottom: 1rem;
+    line-height: 6rem;
+  }
+
+  .headline h2 {
+    font-size: 3rem;
+  }
+
+  .headline p {
+    padding: 3rem 2rem 3rem 3rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    width: 62%;
+  }
+
+  .headline h3 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .headline span {
+    font-size: 2rem;
+  }
+
+  .program {
+    padding: 8rem 18rem;
+  }
+
+  .program h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .program__article {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+
+  .program__article .article-title {
+    margin: 1.6rem;
+  }
+
+  .program__article h3 {
+    font-size: 1.6rem;
+  }
+
+  .program-par {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .program .btn-see-program {
+    display: block;
+    margin-top: 6rem;
+    color: var(--white-color);
+    font-size: 1.4rem;
+  }
+
+  .btn-see-program:hover {
+    color: var(--accent-color);
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .speakers {
+    width: 100%;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 100%;
+    row-gap: 6rem;
+    padding: 6rem 18rem 16rem 18rem;
+  }
+
+  .speakers__title {
+    margin-bottom: 3rem;
+  }
+
+  .speakers-card-container {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 50% 50%;
+    row-gap: 16rem;
+    column-gap: 6rem;
+  }
+
+  .speakers h2 {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .speakers-card {
+    display: grid;
+    grid-template-columns: 26% 74%;
+    column-gap: 2rem;
+  }
+
+  .speakers-card .bg-img {
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  .speakers-card .speakers-img {
+    top: 0;
+    left: 0;
+  }
+
+  .speakers-card .speakers-title {
+    font-size: 2rem;
+  }
+
+  .speakers-card .speakers-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .speakers-card .speakers-par {
+    font-size: 1.4rem;
+  }
+
+  .btn-2 {
+    display: none;
+  }
+
+  .footer h2 {
+    font-size: 2.4rem;
+  }
+
+  .partner .logos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: nowrap;
+    margin: 4rem 0;
+  }
+
+  .creative-commons {
+    justify-content: center;
+    gap: 4rem;
+  }
 }
