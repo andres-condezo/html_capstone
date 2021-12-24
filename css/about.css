@@ -30,6 +30,7 @@ html {
   font-family: var(--font-sans);
   font-size: 62.5%;
   color: var(--primary-color);
+  scroll-behavior: smooth;
 }
 
 /* Setting mobile first styles */
@@ -49,6 +50,10 @@ body {
 
 header {
   width: 100%;
+}
+
+.account-bar {
+  display: none;
 }
 
 .sticky {
@@ -130,7 +135,7 @@ header .desktop-menu-container {
 
 .close-button {
   padding: 0.5rem;
-  color: var(--primary-color);
+  color: #fff;
   background: none;
   border: none;
   font-size: 3rem;
@@ -139,7 +144,7 @@ header .desktop-menu-container {
   display: flex;
   align-content: flex-end;
   margin-top: 3rem;
-  margin-left: 14rem;
+  margin-left: 8rem;
 }
 
 .mobile-menu-ul {
@@ -153,9 +158,9 @@ header .desktop-menu-container {
 }
 
 .mobile-menu-ul a {
+  color: #fff;
   text-decoration: none;
-  color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -404,6 +409,26 @@ main {
 /* Desktops */
 
 @media (min-width: 768px) {
+  header .account-bar {
+    color: var(--white-color);
+    background-color: var(--grey-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem 16rem 1rem 1rem;
+  }
+
+  header .account-bar li {
+    list-style-type: none;
+  }
+
+  header .account-bar li a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
   header .header__logo {
     display: block;
   }
@@ -412,19 +437,38 @@ main {
     display: block;
   }
 
-  header .desktop-menu li {
+  header .desktop-menu-container .desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6rem;
     list-style: none;
   }
 
   header .desktop-menu li a {
     text-decoration: none;
-    margin-right: 6rem;
     font-size: 1.4rem;
     color: var(--primary-color);
   }
 
+  header .account-bar li a:hover {
+    color: var(--accent-color);
+  }
+
   header .desktop-menu li a:hover {
     color: var(--accent-color);
+  }
+
+  header .desktop-menu li .campaign {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    padding: 1rem;
+    border: 4px solid var(--accent-color);
+  }
+
+  header .desktop-menu li .campaign:hover {
+    color: #fff;
+    background-color: var(--accent-color);
   }
 
   .mobile-menu-container {
