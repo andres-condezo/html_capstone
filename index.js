@@ -4,9 +4,10 @@
 
 const menu = document.querySelector('#menu-container');
 const closeButton = document.querySelector('.close-button');
-const hamburguer = document.querySelector('#hamburguer-button');
+const hamburger = document.querySelector('#hamburger-button');
 const body = document.querySelector('body');
 const anchors = document.querySelectorAll('.mobile-menu-ul li');
+const maxCardsMobile = 2;
 
 function openMenu() {
   menu.classList.add('visible');
@@ -18,7 +19,7 @@ function closeMenu() {
   body.classList.remove('overflow-hidden');
 }
 
-hamburguer.addEventListener('click', openMenu);
+hamburger.addEventListener('click', openMenu);
 closeButton.addEventListener('click', closeMenu);
 anchors.forEach((link) => {
   link.addEventListener('click', closeMenu);
@@ -104,9 +105,8 @@ function createCard(el) {
 
 const speakers = dataSpeakers.map((el, index) => {
   const article = document.createElement('article');
-  const maxCards = 2;
   article.className = 'speakers-card';
-  if (index >= maxCards) {
+  if (index >= maxCardsMobile) {
     article.classList.add('desktopCard');
   }
   article.innerHTML = createCard(el);
@@ -118,3 +118,27 @@ const speakersSection = document.getElementById('speakers');
 for (let i = 0; i < speakers.length; i += 1) {
   speakersSection.appendChild(speakers[i]);
 }
+
+// *****************
+// More-btn
+// *****************
+
+const moreBtn = document.getElementById('more-btn');
+
+function showSpeakers() {
+  const speakersCards = document.querySelectorAll('.speakers-card');
+
+  for (let i = 0; i < speakersCards.length; i += 1) {
+    if (i >= maxCardsMobile) {
+      speakersCards[i].classList.toggle('desktopCard');
+    }
+  }
+
+  if (speakersCards[3].classList.contains('desktopCard')) {
+    moreBtn.innerHTML = 'More';
+  } else {
+    moreBtn.innerHTML = 'Less';
+  }
+}
+
+moreBtn.addEventListener('click', showSpeakers);
