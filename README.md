@@ -2,7 +2,15 @@
 
 >	This is my HTML, CSS, and JavaScript capstone project .
 
+>	## Screenshot:
+
+- For mobile version:
+
 ![screenshot](./img/screenshot.png)
+
+- For desktop version:
+
+![screenshot](./img/screenshot-desktop.png)
 
 
 ## Built With
