@@ -337,6 +337,10 @@ main {
   column-gap: 2rem;
 }
 
+.desktopCard {
+  display: none;
+}
+
 .speakers .speakers__title {
   display: flex;
   flex-direction: column;
@@ -608,6 +612,10 @@ main {
     display: grid;
     grid-template-columns: 26% 74%;
     column-gap: 2rem;
+  }
+
+  .desktopCard {
+    display: grid;
   }
 
   .speakers-card .bg-img {
