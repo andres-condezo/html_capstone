@@ -9,7 +9,7 @@
 			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 			crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<title>Document</title>
+	<title>JS Global Conference 2022 About Page</title>
 </head>
 <body>
   <section class="menu-wrap">
@@ -18,19 +18,33 @@
 			<button class="close-button">x</button>
 			<ul class="mobile-menu-ul" id="anchors">
 				<li><a href="./index.html">Home</a></li>
-				<li><a href="#">About</a></li>
+        <li><a href="#logo-section">Logo</a></li>
+        <li><a href="#events-section">Past Events</a></li>
+        <li><a href="#partner-section">Partner</a></li>
+        <li><a href="#">About</a></li>
 			</ul>
 		</div>
 	</section>
 
 	<header id="header">
 		<nav>
+      <ul class="account-bar">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">MyPage</a></li>
+        <li><a href="#">Spanish</a></li>
+      </ul>
 			<ul class="header__ul">
 				<li><a class="header__logo" href="./index.html"><img src="./img/conference-logo.png" alt="conference-logo"></a></li>
-				<li><a href="#" id="hamburguer-button" class="nav__button"><i class="fas fa-bars"></i></a></li>
+				<li><a href="#" id="hamburger-button" class="nav__button"><i class="fas fa-bars"></i></a></li>
 				<li class="desktop-menu-container">
 					<ul class="desktop-menu">
+						<li><a href="#logo-section">Logo</a></li>
+						<li><a href="#events-section">Past Events</a></li>
+						<li><a href="#partner-section">Partner</a></li>
 						<li><a href="#">About</a></li>
+						<li><a href="#" class="campaign">JS Campaign</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -53,7 +67,7 @@
 			</div>
 		</section>
 
-		<section class="logo-section">
+		<section class="logo-section" id="logo-section">
 			<div class="logo-title">
 				<h2 class="logo__title">JavaScript Global <br /> Conference 2022 Logo</h2>
 				<hr class="logo-separator">
@@ -64,7 +78,7 @@
 			<img class="logo-section-img" src="./img/conference-logo.png" alt="javaScript global conference 2022 logo"/>
 		</section>
 		
-		<section class="events">
+		<section class="events" id="events-section">
 			<div class="events__title">
 				<h2 class="events-h2">See the past Javascript Global Conferences</h2>
 				<hr class="events-separator">
@@ -99,7 +113,7 @@
 	</main>
 
 	<footer class="footer">
-		<section class="partner">
+		<section class="partner" id="partner-section">
 
 			<div class="footer__title">
 				<h2 class="footer-h2">Partner</h2>
