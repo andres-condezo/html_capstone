@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>JS Global Conference 2022 Home Page</title>
+</head>
+<body>
+  <section class="menu-wrap">
+		<div id="menu-container" class="mobile-menu-container">
+			<div class="bg-img"></div>
+			<button class="close-button">x</button>
+			<ul class="mobile-menu-ul" id="anchors">
+				<li><a href="#">Home</a></li>
+        <li><a href="#program">Main Program</a></li>
+        <li><a href="#speakers-section">Featured Speakers</a></li>
+        <li><a href="#partner">Partner</a></li>
+        <li><a href="./about.html">About</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<header id="header">
+		<nav>
+      <ul class="account-bar">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">MyPage</a></li>
+        <li><a href="#">Spanish</a></li>
+      </ul>
+			<ul class="header__ul">
+				<li><a class="header__logo" href="#"><img src="./img/conference-logo.png" alt="conference-logo"></a></li>
+				<li><a href="#" id="hamburger-button" class="nav__button"><i class="fas fa-bars"></i></a></li>
+				<li class="desktop-menu-container">
+					<ul class="desktop-menu">
+						<li><a href="#program">Main Program</a></li>
+						<li><a href="#speakers-section">Featured Speakers</a></li>
+						<li><a href="#partner">Partner</a></li>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="#" class="campaign">JS Campaign</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="headline">
+			<div class="headline-wrap">
+				<h2 class="h2-span">"Hello! development world"</h2>
+				<h1>JAVASCRIPT GLOBAL CONFERENCE<br />2022</h1>
+				<p>A joyful conference believing in the value and power of javaScript, creating a positive change with people from over 80 countries is taking place in October, in Perú.</p>
+				<h3>2022.10.20(THU) ~ 21(FRI)</h3>
+				<span>@ JavaScript network of Perú.</span>
+			</div>
+		</section>
+
+		<section class="program" id="program">
+			<div class="program-title">
+				<h2 class="program__title">Main Program</h2>
+				<hr class="program-separator">
+			</div>
+
+			<div class="article-container">
+
+				<article class="program__article">
+					<figure class="article-img">
+						<img src="./img/lecture-icon.png" alt="" class="program__img">
+					</figure>
+					<div class="article-title">
+						<h3 class="program__subtitle">Lecture</h3>
+					</div>
+					<div class="article-par">
+						<p class="program-par">
+							Listen to the speakers from various countries about the messeges of sharing and opening.
+						</p>
+					</div>
+				</article>
+				<article class="program__article">
+					<figure class="article-img">
+						<img src="./img/exhibition-icon.png" alt="" class="program__img">
+					</figure>
+					<div class="article-title">
+						<h3 class="program__subtitle">Exhibition</h3>
+					</div>
+					<div class="article-par">
+						<p class="program-par">
+						Appreciate various creations applying JavaScript of artist, organized from Code Center.
+						</p>
+					</div>
+				</article>
+				<article class="program__article">
+					<figure class="article-img">
+						<img src="./img/forum-icon.png" alt="" class="program__img">
+					</figure>
+					<div class="article-title">
+						<h3 class="program__subtitle">Forum</h3>
+					</div>
+					<div class="article-par">
+						<p class="program-par">
+						Have the time to share your thoughts and opinions with experts for each topic.
+						</p>
+					</div>
+				</article>
+				<article class="program__article">
+					<figure class="article-img">
+						<img src="./img/workshop-icon.png" alt="" class="program__img">
+					</figure>
+					<div class="article-title">
+						<h3 class="program__subtitle">Workshop</h3>
+					</div>
+					<div class="article-par">
+						<p class="program-par">
+						Try creating your own work using open source license rather than just watching at it.
+						</p>
+					</div>
+				</article>
+				<article class="program__article">
+					<figure class="article-img">
+						<img src="./img/networking-icon.png" alt="" class="program__img">
+					</figure>
+					<div class="article-title">
+						<h3 class="program__subtitle">Networking</h3>
+					</div>
+					<div class="article-par">
+						<p class="program-par">
+							Get opportunities to network with JavaScript affiliates around the world, also after the event.
+						</p>
+					</div>
+				</article>
+
+			</div>
+
+			<a href="#" class="btn-txt btn-see-program">SEE THE WHOLE PROGRAM</a>
+
+			<a href="#" class="btn">Join JS Global Conference 2022</a>
+		</section>
+		
+		<section class="speakers" id="speakers-section">
+			<div class="speakers__title">
+				<h2 class="speakers-h2">Featured Speakers</h2>
+				<hr class="speakers-separator">
+			</div>
+
+			<div class="speakers-card-container" id="speakers"></div>
+      <button class="btn btn-2" id='more-btn'>More</button>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<section class="partner" id="partner">
+
+			<div class="footer__title">
+				<h2 class="footer-h2">Partner</h2>
+				<hr class="footer-separator">
+			</div>
+
+			<div class="logos">
+				<img src="./img/mozila-logo.png" alt="mozila logo"/>
+				<img src="./img/google-logo.png" alt="google logo"/>
+				<img src="./img/naver-logo.png" alt="naver logo"/>
+				<img src="./img/daumkakao-logo.png" alt="daumkakao logo"/>
+				<img src="./img/airbnb-logo.png" alt="airbnb logo"/>
+			</div>
+
+		</section>
+
+		<section class="creative-commons">
+			<img src="./img/creative-common-logo.png" alt="creative commons logo" class="cc-logo">
+			<p class="footer-p">
+			2022 Creative Commons <br />
+			Some Rights Reserved
+			</p>
+
+		</section>
+	</footer>
+	
+	<script src="./index.js"></script>
+</body>
+</html>

@@ -1,13 +1,21 @@
-# My Portfolio
+# HTML, CSS, and JavaScript Capstone Project
 
 >	This is my HTML, CSS, and JavaScript capstone project .
 
+>	## Screenshot:
+
+- For mobile version:
+
 ![screenshot](./img/screenshot.png)
+
+- For desktop version:
+
+![screenshot](./img/screenshot-desktop.png)
 
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and JavaScript.
 
 ## Live Demo
 
@@ -61,6 +69,10 @@ $ git clone https://github.com/andres-condezo/html_capstone.git
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Original design idea by [Cindy Shin](https://www.behance.net/adagio07).
 
 ## 📝 License
 
